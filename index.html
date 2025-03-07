@@ -36,13 +36,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portofolio</a>
+              <a class="nav-link" href="#insight">Portofolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">T&C</a>
@@ -57,10 +59,12 @@
     <section id="home">
       <div class="container home text-center">
         <h1>
-          Hallo(Nama Kamu), Saya seorang (Profesi Kamu), Saya sudah
+          Hallo (Nama Kamu), Saya seorang (Profesi Kamu), Saya sudah
           berpengalaman (Pengalaman)
         </h1>
-        <button class="btn">Penekanan</button>
+        <button class="btn btn-success" onclick="sendWhatsAppMessage()">
+          Chat via WhatsApp
+        </button>
       </div>
     </section>
 
@@ -79,11 +83,201 @@
           </p>
         </div>
         <div class="aside">
-          <img src="assets/about.jpg" alt="about.jpg" class="img" />
+          <img src="assets/images.png" alt="about.jpg" class="img" />
         </div>
       </div>
     </section>
     <!-- About End -->
+
+    <!-- Insight  -->
+    <section id="insight">
+      <div class="container">
+        <h2 class="text-center">Insight</h2>
+        <!-- TikTok -->
+        <div class="insight-grid">
+          <div class="box box1">
+            <img src="assets/images.png" />
+          </div>
+          <div class="box box2">
+            <img src="assets/images.png" />
+          </div>
+          <div class="box box3">
+            <img src="assets/images.png" />
+          </div>
+          <div class="box box4">
+            <img src="assets/images.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container ig">
+        <!-- Instagram -->
+        <div class="insight-grid-ig">
+          <div class="box-ig box1-ig">
+            <img src="assets/images.png" />
+          </div>
+          <div class="box-ig box2-ig">
+            <img src="assets/images.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Insight  end -->
+
+    <!-- Content Rivew -->
+    <section
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <h2 class="text-center">Contect Rivew</h2>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <!-- Content Rivew End -->
+
+    <!-- Equipment -->
+    <div class="equipment-section">
+      <h1 class="equipment-title">Equipment</h1>
+      <div class="equipment-grid">
+        <img src="assets/images.png" alt="Equipment" class="equipment-box" />
+        <img src="assets/images.png" alt="Equipment" class="equipment-box" />
+        <img src="assets/images.png" alt="Equipment" class="equipment-box" />
+        <img src="assets/images.png" alt="Equipment" class="equipment-box" />
+        <img src="assets/images.png" alt="Equipment" class="equipment-box" />
+      </div>
+    </div>
+    <!-- Equipment end -->
+
+    <!-- Collaboration Section -->
+    <div class="collab-section">
+      <h2 class="collab-title">COLLABORATION</h2>
+      <div class="collab-container">
+        <div class="collab-carousel">
+          <div class="collab-box">
+            <img src="assets/brand1.png" alt="Brand 1" />
+          </div>
+          <div class="collab-box">
+            <img src="assets/brand2.png" alt="Brand 2" />
+          </div>
+          <div class="collab-box">
+            <img src="assets/brand3.png" alt="Brand 3" />
+          </div>
+          <div class="collab-box">
+            <img src="assets/brand4.png" alt="Brand 4" />
+          </div>
+          <div class="collab-box">
+            <img src="assets/brand5.png" alt="Brand 5" />
+          </div>
+
+          <!-- Duplikat untuk efek seamless -->
+          <div class="collab-box">
+            <img src="assets/brand1.png" alt="Brand 1" />
+          </div>
+          <div class="collab-box">
+            <img src="assets/brand2.png" alt="Brand 2" />
+          </div>
+          <div class="collab-box">
+            <img src="assets/brand3.png" alt="Brand 3" />
+          </div>
+          <div class="collab-box">
+            <img src="assets/brand4.png" alt="Brand 4" />
+          </div>
+          <div class="collab-box">
+            <img src="assets/brand5.png" alt="Brand 5" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h2>PORTOFOLIO</h2>
+            <p>
+              Terima kasih telah mengunjungi portofolio saya. Jangan ragu untuk
+              menghubungi saya.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: yourname@example.com</p>
+            <p>Phone: +62 8123-4567-890</p>
+            <div class="footer-socials">
+              <a href="#"><img src="assets/instagram.svg" alt="Instagram" /></a>
+              <a href="#"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
+              <a href="#"><img src="assets/twitter.svg" alt="Twitter" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <!-- Javascript -->
     <script src="js/script.js"></script>
