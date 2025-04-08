@@ -113,26 +113,25 @@
   text-align: justify;
 }
 
-/* Styling gambar */
-.aside {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img {
-  width: 50%;
-  height: auto;
-  max-height: 350px;
+/* Carousel image */
+#about img {
+  max-height: 500px;
+  object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+#about img:hover {
+  transform: scale(1.02);
+}
+
+/* Carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 50%;
 }
 
 #insight .container {
@@ -146,70 +145,30 @@
   margin-bottom: 30px;
 }
 
-/* Grid Layout */
 .insight-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "box1 box2 box3"
-    ".    box4 .";
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
 }
 
-.box1 {
-  grid-area: box1;
-}
-.box2 {
-  grid-area: box2;
-}
-.box3 {
-  grid-area: box3;
-}
-.box4 {
-  grid-area: box4;
-  align-self: center;
-  justify-self: center;
-}
-
-.insight-grid img {
+.box img,
+.box-ig img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
-  border-radius: 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* Instagram */
-.ig {
-  text-align: center;
-  font-family: Arial, sans-serif;
+/* Efek kecil jika ingin animasi ringan */
+.box1 {
+  transition: transform 0.2s ease;
+}
+.box1:hover {
+  transform: scale(1.01);
 }
 
-.insight-grid-ig {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin-top: 10px;
-}
 
-.box-ig {
-  background-color: #ddd;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box-ig img {
-  width: 300px;
-  height: 300px;
-}
-.box2-ig img {
-  width: 400px;
-  height: 300px;
-}
 
 /* Content Rivew */
 .carousel {
